@@ -11,11 +11,15 @@ class TC_FizzBuzz < Test::Unit::TestCase
   end
 
   def test_fizz
-    assert_equal("Fizz", @obj.answer(3))
+    %w(1 2 3 4).each do |n|
+      assert_equal("Fizz", @obj.answer(n.to_i*3))
+    end
   end
 
   def test_buzz
-    assert_equal("Buzz", @obj.answer(5))
+    %w(1 2 4 5).each do |n|
+      assert_equal("Buzz", @obj.answer(n.to_i*5))
+    end
   end
 
   def test_fizz_buzz
