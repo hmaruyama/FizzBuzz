@@ -2,7 +2,7 @@
 # 5の倍数 -> "Buzz"
 # 15の倍数 -> "FizzBuzz"
 
-module FizzBuzz
+class FizzBuzz
   def answer(n)
     if n % 15 == 0
       return "FizzBuzz"
