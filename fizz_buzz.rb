@@ -4,14 +4,17 @@
 
 class FizzBuzz
   def answer(n)
-    if n % 15 == 0
-      return "FizzBuzz"
-    elsif n % 5 == 0
-      return "Buzz"
-    elsif n % 3 == 0
-      return "Fizz"
-    else
+    str = ""
+    if n % 3 == 0
+      str += "Fizz"
+    end
+    if n % 5 == 0
+      str += "Buzz"
+    end
+    if str == ''
       return n
+    else
+      return str
     end
   end
 end
