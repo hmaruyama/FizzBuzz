@@ -6,8 +6,22 @@ class TC_FizzBuzz < Test::Unit::TestCase
     @obj = FizzBuzz.new
   end
 
-  def test_fizz
-    check = @obj.answer(3)
-    assert_equal("Fizz", check)
+  def test_number
+    assert_equal(1, @obj.answer(1))
   end
+
+  def test_fizz
+    assert_equal("Fizz", @obj.answer(3))
+  end
+
+  def test_buzz
+    assert_equal("Buzz", @obj.answer(5))
+  end
+
+  def test_fizz_buzz
+    100.times do |n|
+      assert_equal("FizzBuzz", @obj.answer(n*15))
+    end
+  end
+
 end
