@@ -1,6 +1,7 @@
 require "./fizz_buzz"
 
+include FizzBuzz
 
 100.times do |n|
-  puts answer(n)
+  puts FizzBuzz.answer(n)
 end
