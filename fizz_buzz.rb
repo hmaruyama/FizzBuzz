@@ -2,14 +2,14 @@
 # 5の倍数 -> "Buzz"
 # 15の倍数 -> "FizzBuzz"
 
-100.times do |n|
+def answer(n)
   if n % 15 == 0
-    puts "FizzBuzz"
+    return "FizzBuzz"
   elsif n % 5 == 0
-    puts "Buzz"
+    return "Buzz"
   elsif n % 3 == 0
-    puts "Fizz"
+    return "Fizz"
   else
-    puts n
+    return n
   end
 end
